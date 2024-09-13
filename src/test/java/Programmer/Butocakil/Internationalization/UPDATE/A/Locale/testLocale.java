@@ -22,4 +22,15 @@ public class testLocale {
 
 
     }
+
+    @Test
+    void testLocateYgBARU() {
+
+        Locale locale = Locale.forLanguageTag("id-ID");
+        System.out.println("Language: " + locale.getLanguage());
+        System.out.println("Country: " + locale.getCountry());
+
+        System.out.println(locale.getDisplayLanguage());
+        System.out.println(locale.getDisplayCountry());
+    }
 }
