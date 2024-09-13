@@ -10,7 +10,7 @@ public class ResourceBundleTest {
     @Test
     void testResourceBundle() {
 
-        var resourceBundle = ResourceBundle.getBundle("message");
+        ResourceBundle resourceBundle = ResourceBundle.getBundle("message");
 
         System.out.println(resourceBundle.getString("hello"));
         System.out.println(resourceBundle.getString("goodbye"));
@@ -20,7 +20,7 @@ public class ResourceBundleTest {
     @Test
     void testResourceBundleIndonesia() {
 
-        var indonesia = new Locale("in", "ID");
+        var indonesia = new Locale("id", "ID");
         var resourceBundle = ResourceBundle.getBundle("message", indonesia);
 
         System.out.println(resourceBundle.getString("hello"));
